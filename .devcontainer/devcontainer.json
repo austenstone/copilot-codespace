@@ -1,0 +1,43 @@
+{
+	"name": "Austen",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "latest"
+		}
+	},
+	"forwardPorts": [ 4200, 9876 ],
+	"postCreateCommand": "npm i",
+    "customizations": {
+      "vscode": {
+        "settings": {
+            "terminal.integrated.profiles.linux": {
+                "bash": {
+                    "path": "bash",
+                    "icon": "terminal-bash"
+                }
+            },
+            "terminal.integrated.defaultProfile.linux": "bash",
+            "extensions.ignoreRecommendations": true,
+            "gitlens.showWelcomeOnInstall": false,
+            "gitlens.showWhatsNewAfterUpgrades": false,
+            "github.copilot.advanced": {
+                "debug.conversation": true
+            }
+        },
+        "extensions": [
+            "GitHub.vscode-pull-request-github",
+            "GitHub.codespaces",
+            "GitHub.remotehub",
+            "GitHub.vscode-github-actions",
+            "GitHub.copilot-labs",
+            "GitHub.copilot-nightly",
+            "GitHub.heygithub",
+            "GitHub.github-vscode-theme",
+            "ms-vsliveshare.vsliveshare",
+            "visualstudioexptteam.vscodeintellicode",
+            "eamodio.gitlens"
+        ]
+      }
+    }
+}
