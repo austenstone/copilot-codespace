@@ -1,7 +1,9 @@
-ARG VARIANT=16
-FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
+# ARG VARIANT=16
+# FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
+FROM ubuntu:latest
 
-RUN sudo apt-get update
+RUN apt-get update
 
+RUN apt install nodejs npm
 RUN npm install -g @githubnext/github-copilot-cli
-RUN echo 'eval "$(github-copilot-cli alias -- "$0")"' >> ~/.zshrc || echo 'eval "$(github-copilot-cli alias -- "$0")"' >> ~/.bashrc || echo 'Failed to setup alias convenience commands'
+RUN echo 'eval "$(github-copilot-cli alias -- "$0")"' >> ~/.bashrc || echo 'Failed to setup alias convenience commands'

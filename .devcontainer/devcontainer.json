@@ -6,8 +6,7 @@
 			"VARIANT": "latest"
 		}
 	},
-	"forwardPorts": [ 4200, 9876 ],
-    "postCreateCommand": "(sudo echo 'Welcome to the GitHub Copilot Codespace 🤯' > /workspaces/.codespaces/shared/first-run-notice.txt) && npm i",
+    "postCreateCommand": "[ -f /workspaces/.codespaces/shared/first-run-notice.txt ] && (sudo echo 'Welcome to the GitHub Copilot Codespace 🤯' > /workspaces/.codespaces/shared/first-run-notice.txt) || echo 'Welcome back to the GitHub Copilot Devcontainer 🤯'",
     "customizations": {
       "vscode": {
         "settings": {
