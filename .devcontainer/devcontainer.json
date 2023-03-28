@@ -7,7 +7,7 @@
 		}
 	},
 	"forwardPorts": [ 4200, 9876 ],
-	"postCreateCommand": "npm i",
+    "postCreateCommand": "(sudo echo 'Welcome to the GitHub Copilot Codespace 🤯' > /workspaces/.codespaces/shared/first-run-notice.txt) && npm i",
     "customizations": {
       "vscode": {
         "settings": {
@@ -35,7 +35,6 @@
             "GitHub.vscode-github-actions",
             "GitHub.copilot-labs",
             "GitHub.copilot-nightly",
-            "GitHub.heygithub",
             "GitHub.github-vscode-theme",
             "ms-vsliveshare.vsliveshare",
             "visualstudioexptteam.vscodeintellicode",
