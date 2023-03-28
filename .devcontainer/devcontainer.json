@@ -23,7 +23,10 @@
             "gitlens.showWhatsNewAfterUpgrades": false,
             "github.copilot.advanced": {
                 "debug.conversation": true
-            }
+            },
+            "editor.inlineSuggest.enabled": true,
+            "git.confirmSync": false,
+            "git.autofetch": true
         },
         "extensions": [
             "GitHub.vscode-pull-request-github",
