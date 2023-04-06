@@ -16,7 +16,6 @@
                     "icon": "terminal-bash"
                 }
             },
-            "terminal.integrated.defaultProfile.linux": "bash",
             "extensions.ignoreRecommendations": true,
             "gitlens.showWelcomeOnInstall": false,
             "gitlens.showWhatsNewAfterUpgrades": false,
