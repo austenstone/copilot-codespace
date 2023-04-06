@@ -1,43 +1,31 @@
 {
-	"name": "Austen",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"VARIANT": "latest"
-		}
-	},
-    "postCreateCommand": "[ -f /workspaces/.codespaces/shared/first-run-notice.txt ] && (sudo echo 'Welcome to the GitHub Copilot Codespace 🤯' > /workspaces/.codespaces/shared/first-run-notice.txt) || echo 'Welcome back to the GitHub Copilot Devcontainer 🤯'",
-    "customizations": {
-      "vscode": {
-        "settings": {
-            "terminal.integrated.profiles.linux": {
-                "bash": {
-                    "path": "bash",
-                    "icon": "terminal-bash"
-                }
-            },
-            "extensions.ignoreRecommendations": true,
-            "gitlens.showWelcomeOnInstall": false,
-            "gitlens.showWhatsNewAfterUpgrades": false,
-            "github.copilot.advanced": {
-                "debug.conversation": true
-            },
-            "editor.inlineSuggest.enabled": true,
-            "git.confirmSync": false,
-            "git.autofetch": true
-        },
-        "extensions": [
-            "GitHub.vscode-pull-request-github",
-            "GitHub.codespaces",
-            "GitHub.remotehub",
-            "GitHub.vscode-github-actions",
-            "GitHub.copilot-labs",
-            "GitHub.copilot-nightly",
-            "GitHub.github-vscode-theme",
-            "ms-vsliveshare.vsliveshare",
-            "visualstudioexptteam.vscodeintellicode",
-            "eamodio.gitlens"
-        ]
-      }
+  "name": "Austen",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "latest"
     }
+  },
+  "postCreateCommand": "[ -f /workspaces/.codespaces/shared/first-run-notice.txt ] && (sudo echo 'Welcome to the GitHub Copilot Codespace 🤯' > /workspaces/.codespaces/shared/first-run-notice.txt) || echo 'Welcome back to the GitHub Copilot Devcontainer 🤯'",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "github.copilot.advanced": {
+          "debug.conversation": true
+        },
+        "git.confirmSync": false,
+        "git.autofetch": true,
+        "workbench.colorTheme": "GitHub Dark Default"
+      },
+      "extensions": [
+        "GitHub.vscode-pull-request-github",
+        "GitHub.codespaces",
+        "GitHub.remotehub",
+        "GitHub.vscode-github-actions",
+        "GitHub.copilot-labs",
+        "GitHub.copilot-nightly",
+        "GitHub.github-vscode-theme"
+      ]
+    }
+  }
 }
